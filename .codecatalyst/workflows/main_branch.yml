@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 # Adaptation of the https://developer.hashicorp.com/terraform/tutorials/automation/github-actions workflow
+=======
+>>>>>>> 44c197f8ec960bbc20c8ed6f42b52656a64b8c3e
 Name: TerraformMainBranch
 SchemaVersion: "1.0"
 
@@ -6,6 +9,13 @@ Triggers:
   - Type: Push
     Branches:
       - main
+<<<<<<< HEAD
+=======
+  - Type: PUSH
+    Branches:
+      - origin
+      - master
+>>>>>>> 44c197f8ec960bbc20c8ed6f42b52656a64b8c3e
 
 Actions:
   Terraform-Main-Branch-Apply:
@@ -35,4 +45,8 @@ Actions:
         - name: Terraform Apply
           run: terraform apply -auto-approve -no-color -input=false
     Compute:
+<<<<<<< HEAD
       Type: EC2
+=======
+      Type: EC2
+>>>>>>> 44c197f8ec960bbc20c8ed6f42b52656a64b8c3e
