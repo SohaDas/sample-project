@@ -5,6 +5,10 @@ Triggers:
   - Type: Push
     Branches:
       - main
+  - Type: PUSH
+    Branches:
+      - origin
+      - master
 
 Actions:
   Terraform-Main-Branch-Apply:
