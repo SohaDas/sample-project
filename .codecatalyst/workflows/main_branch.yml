@@ -1,3 +1,4 @@
+# Adaptation of the https://developer.hashicorp.com/terraform/tutorials/automation/github-actions workflow
 Name: TerraformMainBranch
 SchemaVersion: "1.0"
 
